@@ -35,6 +35,7 @@ Outcome & Feedback
 - [`agentic-warehouse-engine`](https://github.com/topprismdata/agentic-warehouse-engine) — decision-science research on dynamic warehouse reconfiguration.
 - [`market-partition`](https://github.com/topprismdata/market-partition) — deterministic spatial partitioning with agentic interpretation and verification.
 - [`bge-entity-match`](https://github.com/topprismdata/bge-entity-match) — business entity resolution engine.
+- [`fence-dual-goal-diagnosis`](https://github.com/topprismdata/fence-dual-goal-diagnosis) — geofence quality gate: broken-fence diagnostics plus duplicate/overlap detection with zero auto-merge.
 - [`themed-street-engine`](https://github.com/topprismdata/themed-street-engine) — discovering commercial corridors from POI and road-network signals.
 - [`logistics-dispatch-clustering`](https://github.com/topprismdata/logistics-dispatch-clustering) — learning dispatch grouping and driver sequence preferences.
 - [`open-dispatch`](https://github.com/topprismdata/open-dispatch) — local-first reference engine for delivery routing and dispatch optimization.
