@@ -29,13 +29,30 @@ Outcome & Feedback
 - **Decision Engines** — market design, territory, visit planning, routing, warehouse decisions and other optimization problems.
 - **Open Evidence** — anonymized operational studies, public real-world datasets, benchmarks and reproducible research.
 
+### Spatial intelligence stack
+
+The spatial repos form a deliberate stack rather than a set of demos:
+
+```
+TopPrism AI Decision OS
+          |
+   Geo Intelligence
+          |
+Spatial Foundation  <- spatial-decision-intelligence
+   |         |          |             |
+Fence      Route      Store        Territory
+Diagnosis  Optimization Potential  Planning
+```
+
+[`spatial-decision-intelligence`](https://github.com/topprismdata/spatial-decision-intelligence) diagnoses the foundation layer (coordinates, geometry, duplicates) *before* the optimization and planning engines above it consume the data.
+
 ### Public Decision / World Model projects
 
 - [`visit-scheduling-optimizer`](https://github.com/topprismdata/visit-scheduling-optimizer) — periodic field-sales visit planning.
 - [`agentic-warehouse-engine`](https://github.com/topprismdata/agentic-warehouse-engine) — decision-science research on dynamic warehouse reconfiguration.
 - [`market-partition`](https://github.com/topprismdata/market-partition) — deterministic spatial partitioning with agentic interpretation and verification.
 - [`bge-entity-match`](https://github.com/topprismdata/bge-entity-match) — business entity resolution engine.
-- [`fence-dual-goal-diagnosis`](https://github.com/topprismdata/fence-dual-goal-diagnosis) — foundation layer of the Business World Model: fence coordinate/geometry QA plus duplicate and overlap detection, with zero auto-merge.
+- [`spatial-decision-intelligence`](https://github.com/topprismdata/spatial-decision-intelligence) — spatial decision diagnosis engine: conflicts between business objectives and spatial constraints, with explainable findings and zero auto-merge. First scenario: geofence diagnosis.
 - [`themed-street-engine`](https://github.com/topprismdata/themed-street-engine) — discovering commercial corridors from POI and road-network signals.
 - [`logistics-dispatch-clustering`](https://github.com/topprismdata/logistics-dispatch-clustering) — learning dispatch grouping and driver sequence preferences.
 - [`open-dispatch`](https://github.com/topprismdata/open-dispatch) — local-first reference engine for delivery routing and dispatch optimization.
