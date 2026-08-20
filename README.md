@@ -88,6 +88,7 @@ Next Project starts from a higher baseline
 - [`3-ai-debate`](https://github.com/topprismdata/3-ai-debate) — multi-model second-opinion utility for structured deliberation.
 - [`hf-agents-skill`](https://github.com/topprismdata/hf-agents-skill) — local/private inference access layer for employee coding agents.
 - [`auto-receipt`](https://github.com/topprismdata/auto-receipt) — Native AI employee skill for receipt recognition and reimbursement workflows.
+- [`topprismwiki`](https://github.com/topprismdata/topprismwiki) — evidence-governed knowledge infrastructure for enterprise AI agents.
 
 ---
 
