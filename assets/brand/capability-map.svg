@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">TopPrism capability map</title>
+  <desc id="desc">Two compounding paths: world model to decision, and experience to reusable native AI capability.</desc>
+  <defs>
+    <linearGradient id="brand-gradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#13AAFD"/><stop offset="0.34" stop-color="#5267FD"/>
+      <stop offset="0.67" stop-color="#9255FE"/><stop offset="1" stop-color="#DC75CE"/>
+    </linearGradient>
+    <filter id="card-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#4B397C" flood-opacity="0.12"/></filter>
+  </defs>
+  <rect width="1200" height="300" rx="28" fill="#FBFAFE"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" fill="#140F1A">
+    <text x="48" y="48" font-size="16" font-weight="700" letter-spacing="1.4">TOPPRISM CAPABILITY MAP</text>
+    <text x="48" y="76" font-size="13" fill="#6E6875">The public index separates decision intelligence from the systems that make learning reusable.</text>
+  </g>
+  <g filter="url(#card-shadow)">
+    <rect x="48" y="112" width="510" height="128" rx="20" fill="#FFFFFF"/>
+    <rect x="594" y="112" width="558" height="128" rx="20" fill="#FFFFFF"/>
+  </g>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="76" y="142" font-size="13" fill="#5267FD" font-weight="700">WORLD MODEL → DECISION</text>
+    <text x="76" y="172" font-size="18" fill="#140F1A" font-weight="700">World → Model → Decision</text>
+    <text x="76" y="199" font-size="13" fill="#6E6875">Represent operations, constraints and space</text>
+    <path d="M76 222H500" stroke="url(#brand-gradient)" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="76" cy="222" r="7" fill="#13AAFD"/><circle cx="500" cy="222" r="7" fill="#DC75CE"/>
+    <text x="622" y="142" font-size="13" fill="#9255FE" font-weight="700">NATIVE AI</text>
+    <text x="622" y="172" font-size="18" fill="#140F1A" font-weight="700">Experience → Knowledge → Capability</text>
+    <text x="622" y="199" font-size="13" fill="#6E6875">Turn project learning into reusable agent systems</text>
+    <path d="M622 222H1094" stroke="url(#brand-gradient)" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="622" cy="222" r="7" fill="#13AAFD"/><circle cx="1094" cy="222" r="7" fill="#DC75CE"/>
+  </g>
+</svg>

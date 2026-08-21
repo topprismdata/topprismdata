@@ -1,0 +1,328 @@
+schema_version: 1
+owner: topprismdata
+last_reviewed: 2026-08-21
+approval: explicit-user-approved
+
+portfolio_sections:
+  - World Model & Decision
+  - Decision Science
+  - Native AI
+  - Learning Projects
+  - Upstream Forks
+
+pillars:
+  - id: world_model_to_decision
+    title_en: World Model → Decision
+    title_zh: 世界模型 → 决策
+    description_en: Model the physical business world, then turn states, constraints and objectives into decisions.
+    description_zh: 建模真实业务世界，再把状态、约束和目标转化为可解释的决策。
+    flow_en: Business world → world model → constraints & objectives → decision engine → feedback
+    flow_zh: 业务世界 → 世界模型 → 约束与目标 → 决策引擎 → 反馈
+  - id: native_ai
+    title_en: Native AI
+    title_zh: Native AI
+    description_en: Turn project experience into knowledge, reusable skills and stronger agents.
+    description_zh: 把项目经验沉淀为知识、可复用技能和更强的智能体。
+    flow_en: Project → experience → knowledge → reusable skill → stronger agent
+    flow_zh: 项目 → 经验 → 知识 → 可复用技能 → 更强智能体
+
+projects:
+  - repo: visit-scheduling-optimizer
+    pillar: world_model_to_decision
+    portfolio_section: World Model & Decision
+    portfolio_status: flagship
+    pin: true
+    display_order: 10
+    purpose: customer-decision
+    maturity: applied
+    evidence: anonymized-operational-data
+    summary_en: Data-calibrated decision engine for recurring field-sales visit scheduling.
+    summary_zh: 基于数据校准的周期性外勤拜访计划决策引擎。
+
+  - repo: spatial-decision-intelligence
+    pillar: world_model_to_decision
+    portfolio_section: World Model & Decision
+    portfolio_status: catalog
+    pin: false
+    display_order: 20
+    purpose: world-model
+    maturity: research
+    evidence: internal-evaluation
+    summary_en: Diagnose conflicts between business objectives and spatial constraints with explainable findings.
+    summary_zh: 以可解释结果诊断业务目标与空间约束之间的冲突。
+
+  - repo: market-partition
+    pillar: world_model_to_decision
+    portfolio_section: World Model & Decision
+    portfolio_status: catalog
+    pin: false
+    display_order: 30
+    purpose: world-model
+    maturity: research
+    evidence: public-real-world-data
+    summary_en: Deterministic spatial partitioning with agentic semantic interpretation and visual verification.
+    summary_zh: 结合智能体语义解释与视觉核验的确定性空间分区。
+
+  - repo: bge-entity-match
+    pillar: world_model_to_decision
+    portfolio_section: World Model & Decision
+    portfolio_status: catalog
+    pin: false
+    display_order: 40
+    purpose: world-model
+    maturity: research
+    evidence: internal-evaluation
+    summary_en: Contextual business-entity resolution for canonical enterprise world models.
+    summary_zh: 面向企业规范世界模型的上下文业务实体解析。
+
+  - repo: themed-street-engine
+    pillar: world_model_to_decision
+    portfolio_section: World Model & Decision
+    portfolio_status: catalog
+    pin: false
+    display_order: 50
+    purpose: world-model
+    maturity: research
+    evidence: public-real-world-data
+    summary_en: Discover commercial corridors from POI, road-network and business-channel signals.
+    summary_zh: 从 POI、路网与业务渠道信号中发现商业走廊。
+
+  - repo: logistics-dispatch-clustering
+    pillar: world_model_to_decision
+    portfolio_section: World Model & Decision
+    portfolio_status: catalog
+    pin: false
+    display_order: 60
+    purpose: decision-science
+    maturity: research
+    evidence: historical-operational-data
+    summary_en: Applied research on dispatch grouping and driver sequence preferences from historical operations.
+    summary_zh: 基于历史运营数据研究调度分组与司机序列偏好。
+
+  - repo: open-dispatch
+    pillar: world_model_to_decision
+    portfolio_section: World Model & Decision
+    portfolio_status: catalog
+    pin: false
+    display_order: 70
+    purpose: decision-science
+    maturity: reference
+    evidence: none
+    summary_en: Local-first reference engine for delivery routing and dispatch optimization.
+    summary_zh: 本地优先的配送路径与调度优化参考引擎。
+
+  - repo: agentic-warehouse-engine
+    pillar: world_model_to_decision
+    portfolio_section: Decision Science
+    portfolio_status: catalog
+    pin: false
+    display_order: 80
+    purpose: decision-science
+    maturity: research
+    evidence: none
+    summary_en: Research on sequential expert routing for dynamic warehouse slotting under changing demand.
+    summary_zh: 面向变化需求下动态仓位配置的序贯专家路由研究。
+
+  - repo: fashion-lifecycle-pricing
+    pillar: world_model_to_decision
+    portfolio_section: Decision Science
+    portfolio_status: catalog
+    pin: false
+    display_order: 90
+    purpose: decision-science
+    maturity: research
+    evidence: none
+    summary_en: Decision research for fashion demand forecasting, lifecycle state and markdown optimization.
+    summary_zh: 面向时尚零售需求预测、生命周期状态与折扣优化的决策研究。
+
+  - repo: three-layer-wisdom-extraction
+    pillar: native_ai
+    portfolio_section: Native AI
+    portfolio_status: flagship
+    pin: true
+    display_order: 10
+    purpose: native-ai
+    maturity: framework
+    evidence: internal-evaluation
+    summary_en: Promote project events into domain knowledge and transferable principles.
+    summary_zh: 将项目事件沉淀为领域知识与可迁移原则。
+
+  - repo: topprismwiki
+    pillar: native_ai
+    portfolio_section: Native AI
+    portfolio_status: flagship
+    pin: true
+    display_order: 20
+    purpose: native-ai
+    maturity: framework
+    evidence: internal-evaluation
+    summary_en: Evidence-governed knowledge infrastructure for enterprise AI agents.
+    summary_zh: 面向企业智能体的证据治理型知识基础设施。
+
+  - repo: cultivating-ml-agent
+    pillar: native_ai
+    portfolio_section: Native AI
+    portfolio_status: catalog
+    pin: false
+    display_order: 30
+    purpose: native-ai
+    maturity: framework
+    evidence: internal-use
+    summary_en: A self-improving ML agent that compounds capability across projects.
+    summary_zh: 通过跨项目知识结晶与技能复用持续积累能力的 ML 智能体。
+
+  - repo: agent-nurture-framework
+    pillar: native_ai
+    portfolio_section: Native AI
+    portfolio_status: catalog
+    pin: false
+    display_order: 40
+    purpose: native-ai
+    maturity: framework
+    evidence: internal-use
+    summary_en: A framework for turning repeated AI-agent work into reusable capability.
+    summary_zh: 将重复的智能体工作转化为可复用能力的方法框架。
+
+  - repo: skill-tester
+    pillar: native_ai
+    portfolio_section: Native AI
+    portfolio_status: catalog
+    pin: false
+    display_order: 50
+    purpose: native-ai
+    maturity: framework
+    evidence: internal-evaluation
+    summary_en: Quality and trigger-evaluation gate for reusable AI-agent skills.
+    summary_zh: 面向可复用智能体技能的质量与触发评测门。
+
+  - repo: notebook-knowledge-distillation
+    pillar: native_ai
+    portfolio_section: Native AI
+    portfolio_status: catalog
+    pin: false
+    display_order: 60
+    purpose: native-ai
+    maturity: framework
+    evidence: internal-evaluation
+    summary_en: A source-to-skill workflow for converting external knowledge into validated capability.
+    summary_zh: 将外部知识转化为经过验证的技能能力的来源到技能工作流。
+
+  - repo: 3-ai-debate
+    pillar: native_ai
+    portfolio_section: Native AI
+    portfolio_status: catalog
+    pin: false
+    display_order: 70
+    purpose: native-ai
+    maturity: internal-utility
+    evidence: internal-use
+    summary_en: Multi-model second-opinion utility for structured deliberation.
+    summary_zh: 用于结构化审议的多模型第二意见工具。
+
+  - repo: hf-agents-skill
+    pillar: native_ai
+    portfolio_section: Native AI
+    portfolio_status: catalog
+    pin: false
+    display_order: 80
+    purpose: native-ai
+    maturity: internal-utility
+    evidence: internal-use
+    summary_en: Local and private inference access for employee coding agents.
+    summary_zh: 为员工编码智能体提供本地与私有推理访问层。
+
+  - repo: auto-receipt
+    pillar: native_ai
+    portfolio_section: Native AI
+    portfolio_status: catalog
+    pin: false
+    display_order: 90
+    purpose: native-ai
+    maturity: internal-utility
+    evidence: internal-evaluation
+    summary_en: Native AI employee skill for receipt recognition and reimbursement preparation.
+    summary_zh: 用于票据识别与报销准备的 Native AI 员工技能。
+
+  - repo: kaggle-store-sales
+    pillar: native_ai
+    portfolio_section: Learning Projects
+    portfolio_status: catalog
+    pin: false
+    display_order: 10
+    purpose: learning-project
+    maturity: learning
+    evidence: kaggle-benchmark
+    summary_en: Longitudinal learning project for an ML agent using a public time-series competition.
+    summary_zh: 使用公开时间序列竞赛作为训练场的 ML 智能体纵向学习项目。
+
+  - repo: kaggle-ps-s6e4
+    pillar: native_ai
+    portfolio_section: Learning Projects
+    portfolio_status: catalog
+    pin: false
+    display_order: 20
+    purpose: learning-project
+    maturity: learning
+    evidence: kaggle-benchmark
+    summary_en: Tabular-classification learning project for the Cultivating ML Agent.
+    summary_zh: 面向 Cultivating ML Agent 的表格分类学习项目。
+
+  - repo: flint-chart
+    pillar: native_ai
+    portfolio_section: Upstream Forks
+    portfolio_status: catalog
+    pin: false
+    display_order: 10
+    purpose: upstream-fork
+    maturity: reference
+    evidence: none
+    summary_en: Upstream visualization-language reference for agent-generated charts.
+    summary_zh: 面向智能体生成图表的上游可视化语言参考。
+
+  - repo: autogluon
+    pillar: native_ai
+    portfolio_section: Upstream Forks
+    portfolio_status: catalog
+    pin: false
+    display_order: 20
+    purpose: upstream-fork
+    maturity: reference
+    evidence: none
+    summary_en: AutoML reference and dependency retained for evaluation and ML workflows.
+    summary_zh: 为评测与 ML 工作流保留的 AutoML 参考与依赖。
+
+  - repo: autogluon-assistant
+    pillar: native_ai
+    portfolio_section: Upstream Forks
+    portfolio_status: catalog
+    pin: false
+    display_order: 30
+    purpose: upstream-fork
+    maturity: reference
+    evidence: none
+    summary_en: External agentic-ML architecture retained for comparison and evaluation.
+    summary_zh: 为比较与评测保留的外部智能体 ML 架构参考。
+
+  - repo: knowledge-catalog
+    pillar: native_ai
+    portfolio_section: Upstream Forks
+    portfolio_status: catalog
+    pin: false
+    display_order: 40
+    purpose: upstream-fork
+    maturity: reference
+    evidence: none
+    summary_en: Knowledge-system implementation reference retained for evaluation.
+    summary_zh: 为评测保留的知识系统实现参考。
+
+  - repo: ml-knowledge-graph
+    pillar: native_ai
+    portfolio_section: Upstream Forks
+    portfolio_status: catalog
+    pin: false
+    display_order: 50
+    purpose: upstream-fork
+    maturity: reference
+    evidence: none
+    summary_en: Machine-learning knowledge-graph reference retained for comparison.
+    summary_zh: 为比较保留的机器学习知识图谱参考。
