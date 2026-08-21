@@ -19,7 +19,6 @@ MARKER_RE = re.compile(
     re.DOTALL,
 )
 STATUS = {"flagship", "catalog", "candidate", "retired"}
-SECTIONS = ["World Model & Decision", "Decision Science", "Native AI", "Learning Projects", "Upstream Forks"]
 
 
 def load_registry() -> dict[str, Any]:
@@ -35,6 +34,9 @@ def validate_registry(data: dict[str, Any]) -> None:
         raise ValueError("unsupported portfolio schema_version")
     if not data.get("owner"):
         raise ValueError("portfolio owner is required")
+    sections = data.get("portfolio_sections")
+    if not isinstance(sections, list) or not sections or len(set(sections)) != len(sections):
+        raise ValueError("portfolio_sections must be a non-empty unique list")
     pillars = data.get("pillars")
     projects = data.get("projects")
     if not isinstance(pillars, list) or not pillars:
@@ -62,6 +64,8 @@ def validate_registry(data: dict[str, Any]) -> None:
         repos.add(repo)
         if project["pillar"] not in pillar_ids:
             raise ValueError(f"unknown pillar for {repo}: {project['pillar']}")
+        if project["portfolio_section"] not in sections:
+            raise ValueError(f"unknown portfolio section for {repo}: {project['portfolio_section']}")
         if project["portfolio_status"] not in STATUS:
             raise ValueError(f"invalid portfolio_status for {repo}")
         if not isinstance(project.get("pin"), bool):
@@ -121,7 +125,7 @@ def portfolio_block(data: dict[str, Any], language: str) -> str:
     owner = data["owner"]
     projects = data["projects"]
     lines: list[str] = []
-    for section in SECTIONS:
+    for section in data["portfolio_sections"]:
         section_projects = sorted(
             (p for p in projects if p["portfolio_section"] == section),
             key=lambda p: p["display_order"],

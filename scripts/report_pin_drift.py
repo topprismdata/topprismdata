@@ -28,7 +28,14 @@ def main() -> int:
     parser.add_argument("--strict", action="store_true", help="return non-zero when Pins differ")
     args = parser.parse_args()
     registry = load_registry()
-    expected = [p["repo"] for p in registry["projects"] if p["pin"]]
+    pillar_order = {pillar["id"]: index for index, pillar in enumerate(registry["pillars"])}
+    expected = [
+        project["repo"]
+        for project in sorted(
+            (project for project in registry["projects"] if project["pin"]),
+            key=lambda project: (pillar_order[project["pillar"]], project["display_order"]),
+        )
+    ]
     result = subprocess.run(
         ["gh", "api", "graphql", "-f", f"query={QUERY}", "-F", f"login={registry['owner']}"],
         text=True,

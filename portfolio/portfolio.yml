@@ -3,6 +3,13 @@ owner: topprismdata
 last_reviewed: 2026-08-21
 approval: explicit-user-approved
 
+portfolio_sections:
+  - World Model & Decision
+  - Decision Science
+  - Native AI
+  - Learning Projects
+  - Upstream Forks
+
 pillars:
   - id: world_model_to_decision
     title_en: World Model → Decision
