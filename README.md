@@ -1,5 +1,9 @@
 # TopPrism
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/topprismdata/.github/main/assets/brand/topprism-github-hero.png" alt="TopPrism dual-prism visual" width="100%" />
+</p>
+
 ## Software should adapt to people—not the other way around.
 
 The agentic era gives us a chance to move beyond rigid forms, menus and workflows, and build software that understands human intent, collaborates with judgment, and helps people create more value.
