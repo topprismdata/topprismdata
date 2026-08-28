@@ -72,6 +72,9 @@ Experience → Evidence → Candidate Capability
 
 Learning projects, employee utilities and upstream forks remain visible in the repository list as supporting evidence and reference assets. They are not presented as customer products.
 
+The machine-readable repository map and relationship registry lives in
+[`TopPrism/.github`](https://github.com/topprismdata/.github/blob/main/PORTFOLIO.yaml).
+
 ---
 
 ## How to read a TopPrism repository
