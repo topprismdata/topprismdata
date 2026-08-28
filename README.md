@@ -85,6 +85,8 @@ The machine-readable repository map and relationship registry lives in
 [`TopPrism/.github`](https://github.com/topprismdata/.github/blob/main/PORTFOLIO.yaml).
 The shared company and capability vocabulary is maintained in
 [`TopPrism/.github/CANONICAL.md`](https://github.com/topprismdata/.github/blob/main/CANONICAL.md).
+Selected public evidence cases are summarized in
+[`TopPrism/.github/EVIDENCE.md`](https://github.com/topprismdata/.github/blob/main/EVIDENCE.md).
 
 ---
 
