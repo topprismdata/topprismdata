@@ -1,133 +1,103 @@
 # TopPrism
 
-**Decision intelligence for the physical business world.**
+## Software should adapt to people—not the other way around.
 
-TopPrism builds two compounding systems: Customer Decision Intelligence and Native AI. This repository is the public index of what TopPrism works on and what its evidence layer shows.
+The agentic era gives us a chance to move beyond rigid forms, menus and workflows, and build software that understands human intent, collaborates with judgment, and helps people create more value.
+
+**让人摆脱僵硬软件流程的束缚，让 AI 与软件真正放大人的判断与创造。**
+
+Freedom from rigid software does not mean freedom from evidence, responsibility or governance. Human authority remains part of the system.
 
 ---
 
-## Customer Decision Intelligence
+## What we work on today
 
-We model real business operations and turn complex states, constraints and objectives into computable decisions.
+TopPrism provides **Decision Intelligence for consumer-goods businesses**.
+
+We work on turning operational reality, business knowledge, objectives and constraints into insights, recommendations and decisions that people can understand, review and act on.
 
 ```text
-Business World
+Operational reality
         ↓
-World Model
+Understand what exists and what is happening
         ↓
-Decision Engine
+Explain what it means—with evidence and limits
         ↓
-Execution
+Form alternatives, recommendations or decisions
         ↓
-Outcome & Feedback
-        └──────────────→ better next decision
+Human review, action and outcome
+        ↓
+Learn without silently rewriting organizational truth
 ```
 
-**Representative capabilities**
+## Public evidence map
 
-- **Business World Modeling** — entities, spatial context, demand, resources, relations and constraints.
-- **Decision Engines** — market design, territory, visit planning, routing, warehouse decisions and other optimization problems.
-- **Open Evidence** — anonymized operational studies, public real-world datasets, benchmarks and reproducible research.
+The repositories below answer different parts of that problem. The map describes their public questions and boundaries; it does not claim that every repository is one integrated product or has the same commercial maturity.
 
-### Spatial intelligence stack
+### Understand the business world
 
-The spatial repos form a deliberate stack rather than a set of demos:
+- [`prism-ontology`](https://github.com/topprismdata/prism-ontology) — governed semantic contracts and operational profiles.
+- [`bge-entity-match`](https://github.com/topprismdata/bge-entity-match) — whether records from different systems refer to the same real-world entity.
+- [`spatial-decision-intelligence`](https://github.com/topprismdata/spatial-decision-intelligence) — spatial-data trust, boundary generation and decision-readiness research; its strongest published operational validation currently centers on geofences.
+- [`market-partition`](https://github.com/topprismdata/market-partition) — deterministic geometry from human-defined market boundaries.
+- [`themed-street-engine`](https://github.com/topprismdata/themed-street-engine) — commercially meaningful corridor structure from POI and road-network signals.
 
-```
-TopPrism AI Decision OS
-          |
-   Geo Intelligence
-          |
-Spatial Foundation  <- spatial-decision-intelligence
-   |         |          |             |
-Fence      Route      Store        Territory
-Diagnosis  Optimization Potential  Planning
-```
+### Explain the business world
 
-[`spatial-decision-intelligence`](https://github.com/topprismdata/spatial-decision-intelligence) diagnoses the foundation layer (coordinates, geometry, duplicates) *before* the optimization and planning engines above it consume the data.
+- [`mousheng-outlet-insight`](https://github.com/topprismdata/mousheng-outlet-insight) — structured, traceable outlet insight that stops before execution.
 
-### Public Decision / World Model projects
+### Form and study decisions
 
-- [`visit-scheduling-optimizer`](https://github.com/topprismdata/visit-scheduling-optimizer) — periodic field-sales visit planning.
-- [`agentic-warehouse-engine`](https://github.com/topprismdata/agentic-warehouse-engine) — decision-science research on dynamic warehouse reconfiguration.
-- [`market-partition`](https://github.com/topprismdata/market-partition) — deterministic spatial partitioning with agentic interpretation and verification.
-- [`bge-entity-match`](https://github.com/topprismdata/bge-entity-match) — business entity resolution engine.
-- [`spatial-decision-intelligence`](https://github.com/topprismdata/spatial-decision-intelligence) — spatial decision diagnosis engine: conflicts between business objectives and spatial constraints, with explainable findings and zero auto-merge. First scenario: geofence diagnosis.
-- [`themed-street-engine`](https://github.com/topprismdata/themed-street-engine) — discovering commercial corridors from POI and road-network signals.
-- [`logistics-dispatch-clustering`](https://github.com/topprismdata/logistics-dispatch-clustering) — learning dispatch grouping and driver sequence preferences.
-- [`open-dispatch`](https://github.com/topprismdata/open-dispatch) — local-first reference engine for delivery routing and dispatch optimization.
-- [`fashion-lifecycle-pricing`](https://github.com/topprismdata/fashion-lifecycle-pricing) — decision research on demand forecasting and markdown optimization.
+- [`sales-resource-allocation-framework`](https://github.com/topprismdata/sales-resource-allocation-framework) — dealer-territory decision design using a world model, governed knowledge and evidence-linked recommendations.
+- [`visit-scheduling-optimizer`](https://github.com/topprismdata/visit-scheduling-optimizer) — recurring field-sales visit planning under explicit operational constraints.
+- [`open-dispatch`](https://github.com/topprismdata/open-dispatch) and [`logistics-dispatch-clustering`](https://github.com/topprismdata/logistics-dispatch-clustering) — explicit dispatch optimization and learned operational priors, currently published as separate capabilities.
+- [`agentic-warehouse-engine`](https://github.com/topprismdata/agentic-warehouse-engine) and [`fashion-lifecycle-pricing`](https://github.com/topprismdata/fashion-lifecycle-pricing) — Decision Science research, not production-product claims.
 
 ---
 
-## Native AI
+## How TopPrism learns
 
-We also use AI to improve how TopPrism itself learns and works.
+Our Native AI work explores how project experience can become reliable organizational capability without promoting every pattern, note or model output into truth.
 
 ```text
-Project
-   ↓
-Experience
-   ↓
-Knowledge
-   ↓
-Reusable Skill
-   ↓
-Better Agent
-   ↓
-Next Project starts from a higher baseline
+Experience → Evidence → Candidate Capability
+          → Evaluation & Governance
+          → Reuse → New Experience
 ```
 
-**Representative capabilities**
+- [`agent-nurture-framework`](https://github.com/topprismdata/agent-nurture-framework) defines governance contracts; it is a protocol, not an agent runtime.
+- [`cultivating-ml-agent`](https://github.com/topprismdata/cultivating-ml-agent) records longitudinal ML capability formation across projects.
+- [`notebook-knowledge-distillation`](https://github.com/topprismdata/notebook-knowledge-distillation), [`skill-tester`](https://github.com/topprismdata/skill-tester) and [`three-layer-wisdom-extraction`](https://github.com/topprismdata/three-layer-wisdom-extraction) cover candidate formation, evaluation and abstraction research.
+- [`topprismwiki`](https://github.com/topprismdata/topprismwiki) implements evidence-governed knowledge publication and agent-facing context.
 
-- [`cultivating-ml-agent`](https://github.com/topprismdata/cultivating-ml-agent) — an ML agent that compounds capability across projects.
-- [`agent-nurture-framework`](https://github.com/topprismdata/agent-nurture-framework) — methodology for turning repeated AI-agent work into reusable skills.
-- [`skill-tester`](https://github.com/topprismdata/skill-tester) — quality and trigger-evaluation gate for reusable agent skills.
-- [`notebook-knowledge-distillation`](https://github.com/topprismdata/notebook-knowledge-distillation) — source-to-skill workflow for converting external knowledge into validated capability.
-- [`three-layer-wisdom-extraction`](https://github.com/topprismdata/three-layer-wisdom-extraction) — promoting project events into domain knowledge and transferable principles.
-- [`3-ai-debate`](https://github.com/topprismdata/3-ai-debate) — multi-model second-opinion utility for structured deliberation.
-- [`hf-agents-skill`](https://github.com/topprismdata/hf-agents-skill) — local/private inference access layer for employee coding agents.
-- [`auto-receipt`](https://github.com/topprismdata/auto-receipt) — Native AI employee skill for receipt recognition and reimbursement workflows.
-- [`topprismwiki`](https://github.com/topprismdata/topprismwiki) — evidence-governed knowledge infrastructure for enterprise AI agents.
+Learning projects, employee utilities and upstream forks remain visible in the repository list as supporting evidence and reference assets. They are not presented as customer products.
 
 ---
 
-## Why Decision Science, Learning Projects, and Upstream Forks also exist
+## How to read a TopPrism repository
 
-TopPrism's public GitHub is not a flat catalog of customer products. It is the engineering evidence layer behind the two compounding systems above. Three other categories are explicitly labeled so they strengthen rather than blur the story:
+We separate three questions:
 
-- **Decision Science** — `agentic-warehouse-engine`, `fashion-lifecycle-pricing` — research into decision models, optimization, simulation or theory.
-- **Learning Projects** — `kaggle-store-sales`, `kaggle-ps-s6e4` — capability-formation cases; explicitly *not* a customer product.
-- **Upstream Forks** — `flint-chart`, `autogluon`, `autogluon-assistant`, `knowledge-catalog`, `ml-knowledge-graph` — upstream code retained for evaluation, dependency or reference.
+| Dimension | Meaning |
+|---|---|
+| **Purpose** | What question does this repository address? |
+| **Maturity** | Is it applied, validated, experimental, internal or reference material? |
+| **Evidence** | What data, study, benchmark or evaluation supports its claims? |
 
-These forks are not presented as TopPrism originals. Each carries a `TOPPRISM_NOTES.md` declaring upstream, relationship to TopPrism, and any TopPrism-specific modifications.
+A research result is not automatically a production deployment. Internal evaluation is not an external benchmark. A recommendation is not an approved decision. A decision is not execution.
 
----
+## What this GitHub is—and is not
 
-## How to read our repositories
+This account is a public engineering evidence layer: reusable capabilities, applied systems, research, learning histories and clearly attributed upstream references.
 
-Every original TopPrism repository declares:
-
-**Purpose** — `customer-decision` / `world-model` / `native-ai` / `decision-science` / `learning-project` / `upstream-fork`
-
-**Maturity** — `production` / `applied` / `real-data-validated` / `research` / `framework` / `internal-utility` / `learning` / `reference`
-
-**Evidence** — `customer-production` / `customer-pilot` / `anonymized-operational-data` / `historical-operational-data` / `public-real-world-data` / `benchmark` / `kaggle-benchmark` / `internal-evaluation` / `internal-use` / `none`
-
-Technical evidence is deliberately separated from commercial maturity. A real-data research result is not presented as a production deployment, and an internal evaluation is not presented as an external benchmark.
-
----
+It should not be read as a flat product catalog, a collection of unrelated demos, a spatial-only portfolio, a consulting brochure or a generic AI-agent toolkit.
 
 ## Contact
 
-TopPrism Data
+TopPrism Data · [topprismdata.com](https://www.topprismdata.com/) *(in development)*
 
-Public company site: [topprismdata.com](https://www.topprismdata.com/) (currently in development)
-
-Public technical contact for engineering / GitHub matters should route through the company contact channel rather than personal addresses.
-
----
+Public engineering inquiries should use the company contact channel rather than personal addresses.
 
 ## License
 
-The contents of this profile repository are released under the MIT License — see [`LICENSE`](LICENSE).
+The profile content is released under the [MIT License](LICENSE).
