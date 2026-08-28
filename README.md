@@ -1,5 +1,8 @@
 # TopPrism
 
+> **Language / 语言:** English primary · 中文使命说明 included below。
+
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/topprismdata/.github/main/assets/brand/topprism-github-hero.png" alt="TopPrism dual-prism visual" width="100%" />
 </p>
