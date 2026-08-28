@@ -19,7 +19,9 @@ Freedom from rigid software does not mean freedom from evidence, responsibility 
 
 ## What we work on today
 
-TopPrism provides **Decision Intelligence for consumer-goods businesses**.
+TopPrism provides **AI-powered decision intelligence for consumer-goods
+businesses**, turning physical-world data and operational constraints into
+explainable, reviewable decisions.
 
 We work on turning operational reality, business knowledge, objectives and constraints into insights, recommendations and decisions that people can understand, review and act on.
 
@@ -81,6 +83,8 @@ Learning projects, employee utilities and upstream forks remain visible in the r
 
 The machine-readable repository map and relationship registry lives in
 [`TopPrism/.github`](https://github.com/topprismdata/.github/blob/main/PORTFOLIO.yaml).
+The shared company and capability vocabulary is maintained in
+[`TopPrism/.github/CANONICAL.md`](https://github.com/topprismdata/.github/blob/main/CANONICAL.md).
 
 ---
 
